@@ -5,20 +5,20 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float hunger = 100;
-    public float happiness = 100;
+    public float hunger = 100f;
+    public float happiness = 100f;
 
-    public float bath = 100; 
+    public float bath = 100f; 
 
     void Update()
 
     {
             if(hunger <= 0) { Die(); } // se ficar com mt fome, vai de vasco
 
-            hunger -= 0.1f * Time.deltaTime; // diminui o valor de "fome" um pouquinho a cada segundo
+            hunger -= 0.100f * Time.deltaTime; // diminui o valor de "fome" um pouquinho a cada segundo
 
-            happiness -= 0.1f * Time.deltaTime; // mesma coisa da fome, diminui a felicidade cada segundo (tipo na minha vida)
-            bath -= 0.1f * Time.deltaTime; 
+            happiness -= 0.100f * Time.deltaTime; // mesma coisa da fome, diminui a felicidade cada segundo (tipo na minha vida)
+            bath -= 0.100f * Time.deltaTime; 
             }
 
             // esse método pode ser acessado através de um botão na UI, que chama ele pelo EventSystem
