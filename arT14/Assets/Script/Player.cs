@@ -61,8 +61,6 @@ public class Player : MonoBehaviour
         bath = PlayerPrefs.GetFloat("bath");
         happiness = PlayerPrefs.GetFloat("happiness");
 
-
-
     }
     
-        }
+}
