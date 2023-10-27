@@ -15,10 +15,10 @@ public class Player : MonoBehaviour
     {
             if(hunger <= 0) { Die(); } // se ficar com mt fome, vai de vasco
 
-            hunger -= 0.100f * Time.deltaTime; // diminui o valor de "fome" um pouquinho a cada segundo
+            hunger -= 0.1f * Time.deltaTime; // diminui o valor de "fome" um pouquinho a cada segundo
 
-            happiness -= 0.100f * Time.deltaTime; // mesma coisa da fome, diminui a felicidade cada segundo (tipo na minha vida)
-            bath -= 0.100f * Time.deltaTime; 
+            happiness -= 0.1f * Time.deltaTime; // mesma coisa da fome, diminui a felicidade cada segundo (tipo na minha vida)
+            bath -= 0.1f * Time.deltaTime; 
             }
 
             // esse método pode ser acessado através de um botão na UI, que chama ele pelo EventSystem
