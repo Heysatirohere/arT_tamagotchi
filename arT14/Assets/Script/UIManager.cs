@@ -12,9 +12,9 @@ public class UIManager : MonoBehaviour
 
   void Update()
   {
-    hungerLevel.text = player.hunger.ToString("F2") + "%";
-    happinessLevel.text = player.happiness.ToString("F2") + "%";
-    bathLevel.text = player.bath.ToString("F2") + "%";
+    hungerLevel.text = player.hunger.ToString("F1") + "%";
+    happinessLevel.text = player.happiness.ToString("F1") + "%";
+    bathLevel.text = player.bath.ToString("F1") + "%";
     
   }
   
