@@ -30,14 +30,15 @@ public class PlayerRunner : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Ground")
+        
+        switch (collision.gameObject.tag)
         {
-            isGrounded = true;
-
-        }
-        else if (collision.gameObject.tag == "Obstacle")
-        {
-            GetComponent<LoadScene>().Load("SampleScene");
+            case "Ground":
+                isGrounded = true;
+                break;
+            case "Obstacle":
+                GetComponent<LoadScene>().Load("SampleScene");
+                break;
         }
 
     }
