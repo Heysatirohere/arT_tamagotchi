@@ -9,7 +9,6 @@ public class UIManager : MonoBehaviour
  
   public Player player;
 
-
   void Update()
   {
     hungerLevel.text = player.hunger.ToString("F1") + "%";
@@ -18,7 +17,4 @@ public class UIManager : MonoBehaviour
     
   }
   
-
-
-
 }
