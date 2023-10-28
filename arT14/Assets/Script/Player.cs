@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
     void Update()
 
     {
-        if (hunger <= 0) { Die(); } // se ficar com mt fome, vai de vasco
+        if (hunger <= 0) Die();  // se ficar com mt fome, vai de vasco
 
         hunger -= 0.25f * Time.deltaTime; // diminui o valor de "fome" um pouquinho a cada segundo
 
@@ -43,7 +43,12 @@ public class Player : MonoBehaviour
     // mt triste vo chora
     public void Die()
     {
-        // inserir oq acontece quando morre aq
+
+        PlayerPrefs.SetFloat("hunger", 100f);
+        PlayerPrefs.SetFloat("bath", 100f);
+        PlayerPrefs.SetFloat("happiness", 100f);
+
+        GetComponent<LoadScene>().Load("Die"); 
     }
     public void SaveGame()
     {
@@ -54,6 +59,7 @@ public class Player : MonoBehaviour
     
 
     }
+    
 
     public void LoadGame()
     {
