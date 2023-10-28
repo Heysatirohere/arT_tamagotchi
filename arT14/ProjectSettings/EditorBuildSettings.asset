@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Bath.unity
     guid: a11aa2d1ba3bb9a48a275482ad35e7b3
+  - enabled: 1
+    path: Assets/Scenes/Die.unity
+    guid: dc305982a0251b548a4fd58486b3a45d
   m_configObjects: {}

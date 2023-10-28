@@ -10,13 +10,14 @@ public class Obstacle : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        Destroy(gameObject, 10); //
+        Destroy(gameObject, 4); //
     }
 
     
     void Update()
     {
-        rb.velocity = new Vector2(-speed, 0);
+        rb.velocity = new Vector2(-speed, rb.velocity.y
+);
         
     }
 }
