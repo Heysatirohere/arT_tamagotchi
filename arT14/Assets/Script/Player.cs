@@ -38,6 +38,7 @@ public class Player : MonoBehaviour
     {
         // passa um valor a ser adicionado na felicidade quando vc brinca com o bicho
         happiness += happinessIncrease;
+        SaveGame();
     }
 
     // mt triste vo chora

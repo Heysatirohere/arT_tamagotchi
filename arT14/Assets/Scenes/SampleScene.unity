@@ -1671,6 +1671,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 603933520}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 15
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 763104309}
         m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
         m_MethodName: Load
@@ -3022,6 +3034,7 @@ MonoBehaviour:
   hungerLevel: {fileID: 870901440}
   happinessLevel: {fileID: 774972309}
   bathLevel: {fileID: 715793252}
+  Score: {fileID: 0}
   player: {fileID: 603933520}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
