@@ -17,7 +17,11 @@ public class Player : MonoBehaviour
     void Update()
 
     {
-        if (hunger <= 0) Die();  // se ficar com mt fome, vai de vasco
+            bath = Mathf.Clamp(bath, 0, 100);
+            hunger = Mathf.Clamp(hunger, 0, 100);
+            happiness = Mathf.Clamp(happiness, 0, 100);
+
+            if (hunger <= 0) Die();  // se ficar com mt fome, vai de vasco
 
         hunger -= 0.25f * Time.deltaTime; // diminui o valor de "fome" um pouquinho a cada segundo
 
