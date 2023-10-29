@@ -6,8 +6,8 @@ public class PlayerRunner : MonoBehaviour
 {
     bool isGrounded;  
     public float jumpForce = 5f;
-    Rigidbody2D rb; 
-    
+    Rigidbody2D rb;
+    public float Score = 0f;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -18,12 +18,13 @@ public class PlayerRunner : MonoBehaviour
 
     void Update()
     {
+        Score += 10 * Time.deltaTime;
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded) 
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-        
-        
+            
+
         }
         
 

@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     public float happiness = 100f;
     public float bath = 100f;
 
-    public void Start()
+        public void Start()
     {
         LoadGame();
         InvokeRepeating("SaveGame", 1, 30);
