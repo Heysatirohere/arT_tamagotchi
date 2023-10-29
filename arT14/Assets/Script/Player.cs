@@ -41,6 +41,11 @@ public class Player : MonoBehaviour
         SaveGame();
     }
 
+    public void Wash(int cleanessIncrease)
+    {
+        bath += cleanessIncrease;
+    }
+
     // mt triste vo chora
     public void Die()
     {
