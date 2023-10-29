@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     public float hunger = 100f;
     public float happiness = 100f;
     public float bath = 100f;
-
+    public GameObject musicObject; 
         public void Start()
     {
         LoadGame();
@@ -17,11 +17,11 @@ public class Player : MonoBehaviour
     void Update()
 
     {
-            bath = Mathf.Clamp(bath, 0, 100);
-            hunger = Mathf.Clamp(hunger, 0, 100);
-            happiness = Mathf.Clamp(happiness, 0, 100);
+        bath = Mathf.Clamp(bath, 0, 100);
+        hunger = Mathf.Clamp(hunger, 0, 100);
+        happiness = Mathf.Clamp(happiness, 0, 100);
 
-            if (hunger <= 0) Die();  // se ficar com mt fome, vai de vasco
+        if (hunger <= 0) Die();  // se ficar com mt fome, vai de vasco
 
         hunger -= 0.25f * Time.deltaTime; // diminui o valor de "fome" um pouquinho a cada segundo
 
@@ -52,6 +52,8 @@ public class Player : MonoBehaviour
         bath += cleanessIncrease;
         if (bath > 100f)
             bath = 100f;
+        Destroy(musicObject);
+        
 
         SaveGame();
     }
