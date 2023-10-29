@@ -38,12 +38,18 @@ public class Player : MonoBehaviour
     {
         // passa um valor a ser adicionado na felicidade quando vc brinca com o bicho
         happiness += happinessIncrease;
+        if (happiness > 100f)
+            happiness = 100;
         SaveGame();
     }
 
     public void Wash(int cleanessIncrease)
     {
         bath += cleanessIncrease;
+        if (bath > 100f)
+            bath = 100f;
+
+        SaveGame();
     }
 
     // mt triste vo chora
