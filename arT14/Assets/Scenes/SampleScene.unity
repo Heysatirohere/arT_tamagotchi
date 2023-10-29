@@ -1271,6 +1271,7 @@ MonoBehaviour:
   hunger: 100
   happiness: 100
   bath: 100
+  musicObject: {fileID: 737170838}
 --- !u!114 &603933521
 MonoBehaviour:
   m_ObjectHideFlags: 0
