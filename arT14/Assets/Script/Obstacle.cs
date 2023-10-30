@@ -10,7 +10,7 @@ public class Obstacle : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        Destroy(gameObject, 4); //
+        Destroy(gameObject, 4); 
     }
 
     

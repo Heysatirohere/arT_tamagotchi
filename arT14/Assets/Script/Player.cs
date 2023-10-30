@@ -23,16 +23,15 @@ public class Player : MonoBehaviour
 
         if (hunger <= 0) Die();  // se ficar com mt fome, vai de vasco
 
-        hunger -= 0.25f * Time.deltaTime; // diminui o valor de "fome" um pouquinho a cada segundo
-
-        happiness -= 0.25f * Time.deltaTime; // mesma coisa da fome, diminui a felicidade cada segundo (tipo na minha vida)
+        hunger -= 0.25f * Time.deltaTime; 
+        happiness -= 0.25f * Time.deltaTime; 
         bath -= 0.25f * Time.deltaTime;
     }
 
-    // esse método pode ser acessado através de um botão na UI, que chama ele pelo EventSystem
+    // esse método pode ser acessado através de um botão na UI
     public void Eat(int calories)
     {
-        // passa um valor a ser adicionado a sua "fome" (cada comida pode ter um valor, por exemplo)
+     
         hunger += calories;
         if (hunger > 100f)
             hunger = 100f;
@@ -40,7 +39,7 @@ public class Player : MonoBehaviour
 
     public void Play(int happinessIncrease)
     {
-        // passa um valor a ser adicionado na felicidade quando vc brinca com o bicho
+     
         happiness += happinessIncrease;
         if (happiness > 100f)
             happiness = 100;
@@ -58,7 +57,6 @@ public class Player : MonoBehaviour
         SaveGame();
     }
 
-    // mt triste vo chora
     public void Die()
     {
 
