@@ -15,9 +15,6 @@ public class UIManager : MonoBehaviour
     hungerLevel.text = player.hunger.ToString("F1") + "%";
     happinessLevel.text = player.happiness.ToString("F1") + "%";
     bathLevel.text = player.bath.ToString("F1") + "%";
-  
-
-
   }
   
 }
